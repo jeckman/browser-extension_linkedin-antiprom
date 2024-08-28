@@ -2,7 +2,7 @@ const promotedPostsSet = new WeakSet();
 
 export function hidePromoted(): void {
     const promotedPosts = document.evaluate(
-        "//div[div/div/div/div/a/div/span[contains(., 'Promoted')]]",
+        "//div[div/div/div/div/div/a/div/span/span[contains(., 'Promoted')]]",
         document
     );
 
